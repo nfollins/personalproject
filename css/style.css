@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Rancho');
+
+/* body font-font-family: 'Rancho', cursive;*/
+
+/* title font-font-family: font-family: 'Pacifico', cursive;*/
+
+/*Color Scheme-
+#3d3536
+#ffffff
+#a6989a
+#000000
+*/
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Rancho', sans-serif;
+  background-color: #3d3536;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+  color: #a6989a;
+}
+
+h3 {
+color: #3d3536;
+font-size: 10px;
+text-shadow: 2px 2px #000
+text-align: center;
+}
+
+.cd-container {
+
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cd-main-content {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1 {
+  font-family: 'Rancho', cursive;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 14px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 5px #000;
+  color: #fff;
+}
+
+.cd-fixed-bg h2 {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 5px #000;
+  color: #fff;
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../images/mascara.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../images/mascara.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../images/mascara.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../images/mascara.jpg");
+}
+@media only screen and (min-width: 320px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+}
+
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 50%;
+  padding: 2em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px #000;
+  z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #3d3536;
+  color: #fff;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #3d3536;
+  color: #fff;
+}
+.cd-scrolling-bg.cd-color-3 {
+  background-color: #3d3536;
+  color: #fff;
+}
+@media only screen and (min-width: 480px) {
+  .cd-scrolling-bg {
+    padding: 2em 0;
+    font-size: 16px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+#box{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+}
+
+/* Navigation Bar */
+
+.navbar a {
+    float: left;
+    display: block;
+    font-family: 'Rancho', cursive;
+    color: #fff;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px #000;
+}
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3d3536;
+    float: right;
+    list-style-type: none;
+}
+
+/* Main */
+.main {
+    margin-top: 30px;  
+}
